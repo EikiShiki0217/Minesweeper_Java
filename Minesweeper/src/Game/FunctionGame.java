@@ -40,7 +40,7 @@ public class FunctionGame {
             case 1:
                 size[0] = 9;
                 size[1] = 9;
-                size[2] = 2; //10
+                size[2] = 10; //10
                 break;
         
             case 2:
