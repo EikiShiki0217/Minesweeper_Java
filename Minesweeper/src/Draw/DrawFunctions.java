@@ -53,7 +53,7 @@ public class DrawFunctions {
 
     public void drawFlag(Graphics g, int i, int j){
         try {
-            BufferedImage img = ImageIO.read(new File("E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\Flag.png"));
+            BufferedImage img = ImageIO.read(new File("src\\Image\\Flag.png"));
             g.drawImage(img, 10 + j * 30, 61 + i * 30, 30, 30, null);
         } catch (IOException e) {
         }
@@ -88,9 +88,9 @@ public class DrawFunctions {
         try {
             String imgName = null;
             if (index == 9) {
-                imgName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\Mine.png";
+                imgName = "src\\Image\\Mine.png";
             } else if (index == 10) {
-                imgName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\MineRed.png";
+                imgName = "src\\Image\\MineRed.png";
             }
             BufferedImage img =  ImageIO.read(new File(imgName));
             g.drawImage(img, 10 + j * 30, 61 + i * 30, 30, 30, null);
@@ -226,17 +226,17 @@ public class DrawFunctions {
         try {
             String imageName = null;
             if (onSmile) {
-                imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\SmilePressStart.png";
+                imageName = "src\\Image\\SmilePressStart.png";
             } else {
                 if (isWin) {
-                    imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\SmileWin.png";
+                    imageName = "src\\Image\\SmileWin.png";
                 } else if (isLose) {
-                    imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\SmileLose.png";
+                    imageName = "src\\Image\\SmileLose.png";
                 } else {
                     if (press) {
-                        imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\SmilePress.png";
+                        imageName = "src\\Image\\SmilePress.png";
                     } else {
-                        imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\Smile.png";
+                        imageName = "src\\Image\\Smile.png";
                     }
                 }
             }
@@ -248,7 +248,7 @@ public class DrawFunctions {
 
     public void drawTitle(Graphics g, int width) {
         try {
-            String imageName = "E:\\Hicheel\\Buteelt\\Minesweeper\\src\\Image\\Name.png";
+            String imageName = "Minesweeper\\src\\Image\\Name.png";
             BufferedImage img = ImageIO.read(new File(imageName));
             g.drawImage(img, (width - 362) / 2, 13, 362, 35, null);
         } catch (IOException e) {
