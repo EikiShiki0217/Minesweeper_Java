@@ -53,7 +53,7 @@ public class DrawFunctions {
 
     public void drawFlag(Graphics g, int i, int j){
         try {
-            BufferedImage img = ImageIO.read(new File("src\\Image\\Flag.png"));
+            BufferedImage img = ImageIO.read(new File("Minesweeper\\src\\Image\\Flag.png"));
             g.drawImage(img, 10 + j * 30, 61 + i * 30, 30, 30, null);
         } catch (IOException e) {
         }
@@ -88,9 +88,9 @@ public class DrawFunctions {
         try {
             String imgName = null;
             if (index == 9) {
-                imgName = "src\\Image\\Mine.png";
+                imgName = "Minesweeper\\src\\Image\\Mine.png";
             } else if (index == 10) {
-                imgName = "src\\Image\\MineRed.png";
+                imgName = "Minesweeper\\src\\Image\\MineRed.png";
             }
             BufferedImage img =  ImageIO.read(new File(imgName));
             g.drawImage(img, 10 + j * 30, 61 + i * 30, 30, 30, null);
@@ -226,17 +226,17 @@ public class DrawFunctions {
         try {
             String imageName = null;
             if (onSmile) {
-                imageName = "src\\Image\\SmilePressStart.png";
+                imageName = "Minesweeper\\src\\Image\\SmilePressStart.png";
             } else {
                 if (isWin) {
-                    imageName = "src\\Image\\SmileWin.png";
+                    imageName = "Minesweeper\\src\\Image\\SmileWin.png";
                 } else if (isLose) {
-                    imageName = "src\\Image\\SmileLose.png";
+                    imageName = "Minesweeper\\src\\Image\\SmileLose.png";
                 } else {
                     if (press) {
-                        imageName = "src\\Image\\SmilePress.png";
+                        imageName = "Minesweeper\\src\\Image\\SmilePress.png";
                     } else {
-                        imageName = "src\\Image\\Smile.png";
+                        imageName = "Minesweeper\\src\\Image\\Smile.png";
                     }
                 }
             }
