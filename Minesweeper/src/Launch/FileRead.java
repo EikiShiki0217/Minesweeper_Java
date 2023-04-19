@@ -7,7 +7,7 @@ public class FileRead {
     
     public ArrayList<String> list(int difficult){
         ArrayList<String> list = new ArrayList<>();
-        File file = new File("src\\LeaderBoard\\LeaderBoard.txt");
+        File file = new File("Minesweeper\\src\\LeaderBoard\\LeaderBoard.txt");
         String[] difLine ={"Beginner", "Intermediater", "Expert", "null"};
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -34,7 +34,7 @@ public class FileRead {
 
     public Boolean addName(int difficult, String name, int score) {
         ArrayList<String> lboard = new ArrayList<>();
-        String fileName = "src\\LeaderBoard\\LeaderBoard.txt";
+        String fileName = "Minesweeper\\src\\LeaderBoard\\LeaderBoard.txt";
         File file = new File(fileName);
         String[] difLine ={"Beginner", "Intermediater", "Expert", "null"};
         try {
